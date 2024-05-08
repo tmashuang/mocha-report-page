@@ -1,0 +1,325 @@
+{
+  "stats": {
+    "suites": 13,
+    "tests": 17,
+    "passes": 17,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-07T04:53:37.072Z",
+    "end": "2024-05-07T05:23:17.915Z",
+    "duration": 130469,
+    "passPercentage": 100,
+    "failingPercentage": 0
+  },
+  "tests": [
+    {
+      "title": "executes a eth_accounts json rpc call",
+      "fullTitle": "eth_accounts executes a eth_accounts json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_accounts.spec.js",
+      "duration": 6309,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a new message call",
+      "fullTitle": "eth_call executes a new message call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_call.spec.js",
+      "duration": 13521,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "returns the chain ID of the current network",
+      "fullTitle": "eth_chainId returns the chain ID of the current network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_chainId.spec.js",
+      "duration": 5382,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a eth_coinbase json rpc call",
+      "fullTitle": "eth_coinbase executes a eth_coinbase json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_coinbase.spec.js",
+      "duration": 5611,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a estimate gas json rpc call",
+      "fullTitle": "eth_estimateGas executes a estimate gas json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_estimateGas.spec.js",
+      "duration": 8432,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes gas price json rpc call",
+      "fullTitle": "eth_gasPrice executes gas price json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_gasPrice.spec.js",
+      "duration": 6189,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a new block filter call",
+      "fullTitle": "eth_newBlockFilter executes a new block filter call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_newBlockFilter.spec.js",
+      "duration": 6265,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a request accounts json rpc call",
+      "fullTitle": "eth_requestAccounts executes a request accounts json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_requestAccounts.spec.js",
+      "duration": 5231,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "confirms a new transaction",
+      "fullTitle": "eth_sendTransaction confirms a new transaction",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_sendTransaction.spec.js",
+      "duration": 8893,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "rejects a new transaction",
+      "fullTitle": "eth_sendTransaction rejects a new transaction",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_sendTransaction.spec.js",
+      "duration": 7584,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a subscription event",
+      "fullTitle": "eth_subscribe executes a subscription event",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_subscribe.spec.js",
+      "duration": 7019,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "switches the chainId of two dapps when switchEthereumChain of one dapp is confirmed",
+      "fullTitle": "Switch Ethereum Chain for two dapps switches the chainId of two dapps when switchEthereumChain of one dapp is confirmed",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
+      "duration": 8406,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should queue switchEthereumChain request from second dapp after send tx request",
+      "fullTitle": "Switch Ethereum Chain for two dapps should queue switchEthereumChain request from second dapp after send tx request",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
+      "duration": 9800,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should queue send tx after switchEthereum request with a warning, confirming removes pending tx",
+      "fullTitle": "Switch Ethereum Chain for two dapps should queue send tx after switchEthereum request with a warning, confirming removes pending tx",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
+      "duration": 8848,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should queue send tx after switchEthereum request with a warning, if switchEthereum request is cancelled should show pending tx",
+      "fullTitle": "Switch Ethereum Chain for two dapps should queue send tx after switchEthereum request with a warning, if switchEthereum request is cancelled should show pending tx",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
+      "duration": 10031,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a request permissions on eth_accounts event",
+      "fullTitle": "wallet_requestPermissions executes a request permissions on eth_accounts event",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/wallet_requestPermissions.spec.js",
+      "duration": 7366,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should revoke dapp permissions ",
+      "fullTitle": "Revoke Dapp Permissions should revoke dapp permissions ",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/wallet_revokePermissions.spec.js",
+      "duration": 5567,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    }
+  ],
+  "failures": [],
+  "passes": [
+    {
+      "title": "executes a eth_accounts json rpc call",
+      "fullTitle": "eth_accounts executes a eth_accounts json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_accounts.spec.js",
+      "duration": 6309,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a new message call",
+      "fullTitle": "eth_call executes a new message call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_call.spec.js",
+      "duration": 13521,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "returns the chain ID of the current network",
+      "fullTitle": "eth_chainId returns the chain ID of the current network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_chainId.spec.js",
+      "duration": 5382,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a eth_coinbase json rpc call",
+      "fullTitle": "eth_coinbase executes a eth_coinbase json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_coinbase.spec.js",
+      "duration": 5611,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a estimate gas json rpc call",
+      "fullTitle": "eth_estimateGas executes a estimate gas json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_estimateGas.spec.js",
+      "duration": 8432,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes gas price json rpc call",
+      "fullTitle": "eth_gasPrice executes gas price json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_gasPrice.spec.js",
+      "duration": 6189,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a new block filter call",
+      "fullTitle": "eth_newBlockFilter executes a new block filter call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_newBlockFilter.spec.js",
+      "duration": 6265,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a request accounts json rpc call",
+      "fullTitle": "eth_requestAccounts executes a request accounts json rpc call",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_requestAccounts.spec.js",
+      "duration": 5231,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "confirms a new transaction",
+      "fullTitle": "eth_sendTransaction confirms a new transaction",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_sendTransaction.spec.js",
+      "duration": 8893,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "rejects a new transaction",
+      "fullTitle": "eth_sendTransaction rejects a new transaction",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_sendTransaction.spec.js",
+      "duration": 7584,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a subscription event",
+      "fullTitle": "eth_subscribe executes a subscription event",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_subscribe.spec.js",
+      "duration": 7019,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "switches the chainId of two dapps when switchEthereumChain of one dapp is confirmed",
+      "fullTitle": "Switch Ethereum Chain for two dapps switches the chainId of two dapps when switchEthereumChain of one dapp is confirmed",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
+      "duration": 8406,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should queue switchEthereumChain request from second dapp after send tx request",
+      "fullTitle": "Switch Ethereum Chain for two dapps should queue switchEthereumChain request from second dapp after send tx request",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
+      "duration": 9800,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should queue send tx after switchEthereum request with a warning, confirming removes pending tx",
+      "fullTitle": "Switch Ethereum Chain for two dapps should queue send tx after switchEthereum request with a warning, confirming removes pending tx",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
+      "duration": 8848,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should queue send tx after switchEthereum request with a warning, if switchEthereum request is cancelled should show pending tx",
+      "fullTitle": "Switch Ethereum Chain for two dapps should queue send tx after switchEthereum request with a warning, if switchEthereum request is cancelled should show pending tx",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
+      "duration": 10031,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "executes a request permissions on eth_accounts event",
+      "fullTitle": "wallet_requestPermissions executes a request permissions on eth_accounts event",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/wallet_requestPermissions.spec.js",
+      "duration": 7366,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should revoke dapp permissions ",
+      "fullTitle": "Revoke Dapp Permissions should revoke dapp permissions ",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/wallet_revokePermissions.spec.js",
+      "duration": 5567,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    }
+  ]
+}
