@@ -2,14 +2,14 @@ import type { TableData } from "@mantine/core";
 import { Card, Table } from "@mantine/core";
 import { useAppSelector } from '../../app/hooks'
 
-import { getAllFileNamesNested } from './testListSlice';
+import { getAllFilesCountDuration } from './testListSlice';
 import { CardTopBar } from "../card/CardInfo";
 
-export const TestListRender = () => {
-  const nestedFiles = useAppSelector(getAllFileNamesNested)
+export const TestListRender = (props: any) => {
+  const nestedFiles = useAppSelector(getAllFilesCountDuration)
 
   const tableData: TableData = {
-    head: ['Filename', 'Tests', 'Execution Time', 'Passed', 'Failed', 'Retry'],
+    head: props.tableHead,
     body: nestedFiles,
   }
 

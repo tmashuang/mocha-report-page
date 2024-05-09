@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Plotly from 'plotly.js-dist-min';
 import createPlotlyComponent from 'react-plotly.js/factory';
 
-import { useAppDispatch, useAppSelector } from "../../app/hooks"
 
 const Plot = createPlotlyComponent(Plotly)
 
@@ -12,14 +11,15 @@ export const DonutChart = (props: any) => {
     React.createElement(Plot, {
       data: [{
         type: 'pie',
-        values: [1, 1, 1, 1],
-        labels: ['A','B','C','D'],
-        hole: 0.4
+        values: props.counts,
+        labels: props.files,
+        hole: 0.4,
+        textinfo: 'none'
       }],
       layout: {
-        title: 'Chart Title',
+        title: props.chartName,
         annotations: [{
-          text: 'Test total',
+          text: props.total,
           showarrow: false,
           font: {
             family: 'Verdana, sans-serif',
@@ -27,7 +27,8 @@ export const DonutChart = (props: any) => {
           }
         }],
         width: 400,
-        height: 400
+        height: 400,
+        showlegend: false
       }
     })
   )

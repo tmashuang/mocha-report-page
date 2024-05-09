@@ -1,5 +1,5 @@
 import { createAppSlice } from "../../app/createAppSlice"
-import { stats } from '../../example/report.json'
+import { stats } from '../../../dist/report.json'
 
 export interface TestInfoSliceState {
   stats: {

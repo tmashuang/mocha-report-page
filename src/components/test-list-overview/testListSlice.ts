@@ -1,5 +1,10 @@
 import { createAppSlice } from "../../app/createAppSlice";
-import { tests } from '../../example/report.json'
+import { tests } from '../../../dist/report.json'
+import {
+  filesCount,
+  filesCountDuration,
+  filesCountPercentages
+} from '../utils.js'
 
 export interface TestListSliceState {
   tests: any,
@@ -15,18 +20,35 @@ export const testListSlice = createAppSlice({
   reducers: create => ({}),
   selectors: {
     getAllTests: state => state.tests,
-    getAllFileNamesNested: state => {
-      const nestedFileNames: any = []
-      const tests = state.tests
+    getAllFiles: state => {
+      const files = filesCount(state.tests)
+      return Object.keys(files)
+    },
+    getAllCounts: state => {
+      const files = filesCount(state.tests)
+      return Object.values(files)
+    },
+    getAllFilesCount: state => {
+      const files = filesCount(state.tests)
+      return Object.entries(files)
+    },
+    getAllFilesCountDuration: state => {
+      const files = filesCountDuration(state.tests)
+       return Object.entries(files).map(([filename, counts]: any) => [filename, ...counts]);
+    },
+    getALLFilesCountPercentages: state => {
+      const files = filesCountPercentages(state.tests)
+      return Object.entries(files).map(([filename, arr]: any) => [filename, ...arr]);
 
-      tests.forEach((test: any) => {
-        const parseFile = test.file.match(/[^/]+\.js$/)[0];
-        nestedFileNames.push([parseFile])
-      });
-
-      return nestedFileNames
     }
   }
 })
 
-export const { getAllFileNamesNested } = testListSlice.selectors
+export const {
+  getAllTests,
+  getAllFiles,
+  getAllCounts,
+  getAllFilesCount,
+  getAllFilesCountDuration,
+  getALLFilesCountPercentages
+} = testListSlice.selectors

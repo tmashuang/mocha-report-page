@@ -1,17 +1,13 @@
 import type { TableData } from "@mantine/core";
 import { Table } from "@mantine/core";
 
-const tableData: TableData = {
-  head: ['Status', 'Tests', 'Percentages'],
-  body: [
-    ['Passed', '17', '94.44%'],
-    ['Failed', '0', '0%'],
-    ['Skipped', '1', '5.55%'],
-    ['Retry', '3', '16.66%'],
-  ]
-}
 
-export const TableRender = () => {
+export const TableRender = (props: any) => {
+  const tableData: TableData = {
+    head: props.tableHead,
+    body: props.tableBody,
+  }
+  
   return (
     <Table
       horizontalSpacing='xl'

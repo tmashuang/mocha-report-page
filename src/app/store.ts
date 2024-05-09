@@ -1,15 +1,14 @@
 import type { Action, ThunkAction } from "@reduxjs/toolkit"
 import { combineSlices, configureStore } from "@reduxjs/toolkit"
-import { setupListeners } from "@reduxjs/toolkit/query"
-import { quotesApiSlice } from "../components/quotes/quotesApiSlice"
 import { testInfoSlice } from "../components/run-info/testInfoSlice"
 import { testListSlice  } from "../components/test-list-overview/testListSlice"
-import report from '../example/report.json'
+
 
 // `combineSlices` automatically combines the reducers using
 // their `reducerPath`s, therefore we no longer need to call `combineReducers`.
 // const rootReducer = combineSlices(counterSlice, quotesApiSlice)
 const rootReducer = combineSlices(testInfoSlice, testListSlice)
+// const rootReducer = combineSlices())
 // Infer the `RootState` type from the root reducer
 export type RootState = ReturnType<typeof rootReducer>
 
@@ -23,7 +22,7 @@ export type RootState = ReturnType<typeof rootReducer>
 //     middleware: getDefaultMiddleware => {
 //       return getDefaultMiddleware().concat(quotesApiSlice.middleware)
 //     },
-//     preloadedState,
+    // preloadedState,
 //   })
 //   // configure listeners using the provided defaults
 //   // optional, but required for `refetchOnFocus`/`refetchOnReconnect` behaviors
