@@ -2,17 +2,14 @@ import { Card, Grid } from "@mantine/core";
 import { useAppSelector } from '../../app/hooks'
 import { CardTopBar } from '../card/CardInfo'
 
-import { getTestStarted, getTestEnded, getTestDuration } from './testInfoSlice'
-
+import {
+  durationToSecs
+} from '../utils.js'
 
 export const TestInfo = () => {
-  // const testStarted = useAppSelector((state: any) => state.stats.start)
-  // const testEnded = useAppSelector((state: any) => state.stats.end)
-  // const totalRunTime = useAppSelector((state: any) => state.stats.duration)
-  const dateTimeStarted = useAppSelector(getTestStarted)
-  const dateTimeEnded = useAppSelector(getTestEnded)
-  const timeInSecs = useAppSelector(getTestDuration)
-
+  const dateTimeStarted = useAppSelector((state: any) => new Date(state.stats.start).toUTCString())
+  const dateTimeEnded = useAppSelector((state: any) => new Date(state.stats.end).toUTCString())
+  const timeInSecs = useAppSelector((state: any) => durationToSecs(state.stats.duration))
 
   return (
     <>
@@ -20,7 +17,14 @@ export const TestInfo = () => {
       <Card.Section>
         <CardTopBar cardName='Run Info'/>
       </Card.Section>
-      <Grid columns={2} justify="space-around" align="stretch">
+      <Grid columns={2}
+        justify="center"
+        align="stretch"
+        style={{
+          minHeight: '350px',
+          marginTop: '10px',
+        }}
+      >
         <Grid.Col span={1}>
           Project
         </Grid.Col>
@@ -55,7 +59,7 @@ export const TestInfo = () => {
           Total Execution Time
         </Grid.Col>
         <Grid.Col span={1}>
-          {`${timeInSecs}s`}
+          {timeInSecs}
         </Grid.Col>
       </Grid>
       </Card>

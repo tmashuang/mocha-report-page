@@ -1,5 +1,5 @@
 export const durationToSecs = (ms: number) => {
-  return `${ms / 1000}s`
+  return `${(ms / 1000).toFixed(2)}s`
 }
 
 const percentage = (initial: number, total: number) => {
@@ -25,31 +25,6 @@ export const filesCount = (tests: any) => {
   return result
 }
 
-export const filesCountDuration = (tests: any) => {
-  const result: any = {}
-
-  for (const test of tests) {
-
-    const segment = test.file.split('/')
-    const filename = segment[segment.length - 1];
-
-    if (result[filename]) {
-      result[filename][0]++
-      result[filename][1] += test.duration
-    } else {
-      result[filename] = [1]
-      result[filename][1] = test.duration
-    }
-
-  }
-
-  for (const entry in result) {
-    result[entry][1] = durationToSecs(result[entry][1])
-  }
-
-  return result
-}
-
 export const filesCountPercentages = (tests: any) => {
   const result: any = {}
   const total = tests.length;
@@ -69,19 +44,29 @@ export const filesCountPercentages = (tests: any) => {
   return result
 }
 
-export const mergeArrays = (...arrays: any) => {
-  if (arrays.length === 0) return [];
-
-  const maxLength = Math.max(...arrays.map((arr: any) => arr.length));
-
-  const mergedArray = [];
-  for (let i = 0; i < maxLength; i++) {
-    const nestedArray: any = [];
-    arrays.forEach((arr: any) => {
-      nestedArray.push(arr[i]);
-    });
-    mergedArray.push(nestedArray);
+export const retryCount = (tests: any) => {
+  let retries = 0
+  for (const test of tests) {
+    retries += test.currentRetry
   }
 
-  return mergedArray;
+  return retries
 }
+
+export const fileInfoFormat = (state: any) => state.tests.reduce((acc: any, test: any) => {
+    const existingElement = acc.find((element: any) => element.name === test.file.split('/').pop());
+    if (existingElement) {
+      existingElement.count++;
+      existingElement.executionTime += test.duration;
+    } else {
+      acc.push({
+        name: test.file.split('/').pop(),
+        count: 1,
+        executionTime: test.duration,
+        passed: state.passes.filter((pass: { file: any }) => pass.file === test.file).length,
+        failed: state.failures.filter((fail: { file: any }) => fail.file === test.file).length,
+        retries: test.currentRetry,
+      });
+    }
+    return acc;
+  }, []);

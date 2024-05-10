@@ -1,14 +1,13 @@
 import type { Action, ThunkAction } from "@reduxjs/toolkit"
 import { combineSlices, configureStore } from "@reduxjs/toolkit"
-import { testInfoSlice } from "../components/run-info/testInfoSlice"
-import { testListSlice  } from "../components/test-list-overview/testListSlice"
+import report from '../../public/report.json';
 
 
 // `combineSlices` automatically combines the reducers using
 // their `reducerPath`s, therefore we no longer need to call `combineReducers`.
 // const rootReducer = combineSlices(counterSlice, quotesApiSlice)
-const rootReducer = combineSlices(testInfoSlice, testListSlice)
-// const rootReducer = combineSlices())
+// const rootReducer = combineSlices(browserBreakdownSlice)
+const rootReducer = combineSlices()
 // Infer the `RootState` type from the root reducer
 export type RootState = ReturnType<typeof rootReducer>
 
@@ -33,7 +32,7 @@ export type RootState = ReturnType<typeof rootReducer>
 export const makeStore = (preloadedState?: Partial<RootState>) => {
   const store = configureStore({
     reducer: rootReducer,
-    preloadedState,
+    preloadedState: report,
   })
 
   return store

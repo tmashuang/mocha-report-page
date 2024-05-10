@@ -1,4 +1,4 @@
-Add report to `example/report.json`
+Add report to `public/report.json`
 
 ## Scripts
 

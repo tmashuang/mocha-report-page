@@ -1,11 +1,12 @@
 {
   "name": "mocha-report-page",
-  "main": "./dist/index.js",
+  "main": "./dist/index.html",
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "start": "vite",
     "build": "tsc && vite build",
+    "watch": "tsc && vite build --watch",
     "preview": "vite preview",
     "test": "vitest run",
     "format": "prettier --write .",
@@ -30,6 +31,7 @@
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^20.12.11",
     "@types/plotly.js-dist-min": "^2.3.4",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",

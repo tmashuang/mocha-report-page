@@ -11,8 +11,8 @@ export const DonutChart = (props: any) => {
     React.createElement(Plot, {
       data: [{
         type: 'pie',
-        values: props.counts,
-        labels: props.files,
+        values: props.values,
+        labels: props.labels,
         hole: 0.4,
         textinfo: 'none'
       }],
@@ -26,8 +26,8 @@ export const DonutChart = (props: any) => {
             size: 15,
           }
         }],
-        width: 400,
-        height: 400,
+        width: 450,
+        height: 350,
         showlegend: false
       }
     })
