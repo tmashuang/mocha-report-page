@@ -29,19 +29,19 @@ export const TestInfo = () => {
           Project
         </Grid.Col>
         <Grid.Col span={1}>
-          Test E2E RPC
+          Test E2E Chrome
         </Grid.Col>
         <Grid.Col span={1}>
           Release
         </Grid.Col>
         <Grid.Col span={1}>
-          11.4.3
+          11.14.4
         </Grid.Col>
         <Grid.Col span={1}>
-          Test Environment
+          MetaMask Environment
         </Grid.Col>
         <Grid.Col span={1}>
-          Test
+          'testing'
         </Grid.Col>
         <Grid.Col span={1}>
           Execution Start Time

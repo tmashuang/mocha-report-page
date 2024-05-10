@@ -1,322 +1,1786 @@
 {
   "stats": {
-    "suites": 13,
-    "tests": 17,
-    "passes": 17,
+    "suites": 42,
+    "tests": 98,
+    "passes": 96,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-05-07T04:53:37.072Z",
-    "end": "2024-05-07T05:23:17.915Z",
-    "duration": 130469,
-    "passPercentage": 100,
-    "failingPercentage": 0
+    "failures": 1,
+    "start": "2024-05-10T04:57:21.949Z",
+    "end": "2024-05-10T06:18:36.522Z",
+    "duration": 699074,
+    "passPercentage": 102.08333333333333,
+    "failingPercentage": 1.0204081632653061
   },
   "tests": [
     {
-      "title": "executes a eth_accounts json rpc call",
-      "fullTitle": "eth_accounts executes a eth_accounts json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_accounts.spec.js",
-      "duration": 6309,
+      "title": "should show the QR code for the account",
+      "fullTitle": "Show account details should show the QR code for the account",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 14961,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a new message call",
-      "fullTitle": "eth_call executes a new message call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_call.spec.js",
-      "duration": 13521,
+      "title": "should show the correct private key from account menu",
+      "fullTitle": "Show account details should show the correct private key from account menu",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 6592,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "returns the chain ID of the current network",
-      "fullTitle": "eth_chainId returns the chain ID of the current network",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_chainId.spec.js",
-      "duration": 5382,
+      "title": "should show the correct private key for an unselected account from account menu",
+      "fullTitle": "Show account details should show the correct private key for an unselected account from account menu",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 7015,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a eth_coinbase json rpc call",
-      "fullTitle": "eth_coinbase executes a eth_coinbase json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_coinbase.spec.js",
-      "duration": 5611,
+      "title": "should show the correct private key from global menu",
+      "fullTitle": "Show account details should show the correct private key from global menu",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 6486,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a estimate gas json rpc call",
-      "fullTitle": "eth_estimateGas executes a estimate gas json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_estimateGas.spec.js",
-      "duration": 8432,
+      "title": "should show the correct private key for a second account from global menu",
+      "fullTitle": "Show account details should show the correct private key for a second account from global menu",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 7206,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes gas price json rpc call",
-      "fullTitle": "eth_gasPrice executes gas price json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_gasPrice.spec.js",
-      "duration": 6189,
+      "title": "should not reveal private key when password is incorrect",
+      "fullTitle": "Show account details should not reveal private key when password is incorrect",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 4834,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a new block filter call",
-      "fullTitle": "eth_newBlockFilter executes a new block filter call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_newBlockFilter.spec.js",
-      "duration": 6265,
+      "title": "hide account by clicking hide button",
+      "fullTitle": "Account list - hide/unhide functionality -  hide account by clicking hide button",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-hide-unhide.spec.js",
+      "duration": 5029,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a request accounts json rpc call",
-      "fullTitle": "eth_requestAccounts executes a request accounts json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_requestAccounts.spec.js",
-      "duration": 5231,
+      "title": "unhide account by clicking show account button",
+      "fullTitle": "Account list - hide/unhide functionality -  unhide account by clicking show account button",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-hide-unhide.spec.js",
+      "duration": 4922,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "confirms a new transaction",
-      "fullTitle": "eth_sendTransaction confirms a new transaction",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_sendTransaction.spec.js",
-      "duration": 8893,
+      "title": "pin and unpin account by clicking the pin/unpin button",
+      "fullTitle": "Account list - pin/unpin functionality -  pin and unpin account by clicking the pin/unpin button",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-pin-unpin.spec.js",
+      "duration": 6207,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "rejects a new transaction",
-      "fullTitle": "eth_sendTransaction rejects a new transaction",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_sendTransaction.spec.js",
-      "duration": 7584,
+      "title": "account once hidden should be unpinned and remain so even if revealed again",
+      "fullTitle": "Account list - pin/unpin functionality -  account once hidden should be unpinned and remain so even if revealed again",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-pin-unpin.spec.js",
+      "duration": 4219,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a subscription event",
-      "fullTitle": "eth_subscribe executes a subscription event",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_subscribe.spec.js",
-      "duration": 7019,
+      "title": "should display correct new account name after create",
+      "fullTitle": "Add account should display correct new account name after create",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/add-account.spec.js",
+      "duration": 5117,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "switches the chainId of two dapps when switchEthereumChain of one dapp is confirmed",
-      "fullTitle": "Switch Ethereum Chain for two dapps switches the chainId of two dapps when switchEthereumChain of one dapp is confirmed",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
-      "duration": 8406,
+      "title": "should not affect public address when using secret recovery phrase to recover account with non-zero balance @no-mmi",
+      "fullTitle": "Add account should not affect public address when using secret recovery phrase to recover account with non-zero balance @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/add-account.spec.js",
+      "duration": 10849,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "should queue switchEthereumChain request from second dapp after send tx request",
-      "fullTitle": "Switch Ethereum Chain for two dapps should queue switchEthereumChain request from second dapp after send tx request",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
-      "duration": 9800,
+      "title": "should be possible to remove an account imported with a private key, but should not be possible to remove an account generated from the SRP imported in onboarding @no-mmi",
+      "fullTitle": "Add account should be possible to remove an account imported with a private key, but should not be possible to remove an account generated from the SRP imported in onboarding @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/add-account.spec.js",
+      "duration": 5694,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "should queue send tx after switchEthereum request with a warning, confirming removes pending tx",
-      "fullTitle": "Switch Ethereum Chain for two dapps should queue send tx after switchEthereum request with a warning, confirming removes pending tx",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
-      "duration": 8848,
+      "title": "Import wallet using Secret Recovery Phrase",
+      "fullTitle": "Import flow @no-mmi Import wallet using Secret Recovery Phrase",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 13188,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "should queue send tx after switchEthereum request with a warning, if switchEthereum request is cancelled should show pending tx",
-      "fullTitle": "Switch Ethereum Chain for two dapps should queue send tx after switchEthereum request with a warning, if switchEthereum request is cancelled should show pending tx",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
-      "duration": 10031,
+      "title": "Import wallet using Secret Recovery Phrase with pasting word by word",
+      "fullTitle": "Import flow @no-mmi Import wallet using Secret Recovery Phrase with pasting word by word",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 5535,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a request permissions on eth_accounts event",
-      "fullTitle": "wallet_requestPermissions executes a request permissions on eth_accounts event",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/wallet_requestPermissions.spec.js",
-      "duration": 7366,
+      "title": "Import Account using private key and remove imported account",
+      "fullTitle": "Import flow @no-mmi Import Account using private key and remove imported account",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 5970,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "should revoke dapp permissions ",
-      "fullTitle": "Revoke Dapp Permissions should revoke dapp permissions ",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/wallet_revokePermissions.spec.js",
-      "duration": 5567,
+      "title": "Import Account using json file",
+      "fullTitle": "Import flow @no-mmi Import Account using json file",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 4553,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Import Account using private key of an already active account should result in an error",
+      "fullTitle": "Import flow @no-mmi Import Account using private key of an already active account should result in an error",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 3710,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Connects to a Hardware wallet for trezor",
+      "fullTitle": "Import flow @no-mmi Connects to a Hardware wallet for trezor",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 5959,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Back up Secret Recovery Phrase from backup reminder @no-mmi",
+      "fullTitle": "Incremental Security Back up Secret Recovery Phrase from backup reminder @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/incremental-security.spec.js",
+      "duration": 8912,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "successfully unlocks after lock",
+      "fullTitle": "Lock and unlock successfully unlocks after lock",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/lock-account.spec.js",
+      "duration": 6466,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "the UI and background environments are locked down",
+      "fullTitle": "lockdown the UI and background environments are locked down",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/lockdown.spec.js",
+      "duration": 4667,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Creating a new wallet @no-mmi",
+      "fullTitle": "MetaMask Responsive UI Creating a new wallet @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/metamask-responsive-ui.spec.js",
+      "duration": 7424,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Importing existing wallet from lock page",
+      "fullTitle": "MetaMask Responsive UI Importing existing wallet from lock page",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/metamask-responsive-ui.spec.js",
+      "duration": 5385,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Send Transaction from responsive window",
+      "fullTitle": "MetaMask Responsive UI Send Transaction from responsive window",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/metamask-responsive-ui.spec.js",
+      "duration": 9264,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "successfully unlocks an old vault, locks it, and unlock again",
+      "fullTitle": "Migrate vault with old encryption successfully unlocks an old vault, locks it, and unlock again",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/migrate-old-vault.spec.js",
+      "duration": 5660,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "links to the users account on the explorer, ",
+      "fullTitle": "Block Explorer links to the users account on the explorer, ",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/block-explorer.spec.js",
+      "duration": 5358,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "links to the token tracker in the explorer, ",
+      "fullTitle": "Block Explorer links to the token tracker in the explorer, ",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/block-explorer.spec.js",
+      "duration": 8255,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "links to the transaction on the explorer, ",
+      "fullTitle": "Block Explorer links to the transaction on the explorer, ",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/block-explorer.spec.js",
+      "duration": 3947,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should display the correct account balance after contract interactions",
+      "fullTitle": "Deploy contract and call contract methods should display the correct account balance after contract interactions",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/contract-interactions.spec.js",
+      "duration": 23255,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should trigger the add chain confirmation despite MetaMask being locked",
+      "fullTitle": "Dapp interactions should trigger the add chain confirmation despite MetaMask being locked",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/dapp-interactions.spec.js",
+      "duration": 7987,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should connect a second Dapp despite MetaMask being locked",
+      "fullTitle": "Dapp interactions should connect a second Dapp despite MetaMask being locked",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/dapp-interactions.spec.js",
+      "duration": 6118,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT show an edit button on a contract interaction confirmation initiated by a dapp",
+      "fullTitle": "Editing confirmations of dapp initiated contract interactions should NOT show an edit button on a contract interaction confirmation initiated by a dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/dapp-tx-edit.spec.js",
+      "duration": 24148,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT show an edit button on a simple ETH send initiated by a dapp",
+      "fullTitle": "Editing confirmations of dapp initiated contract interactions should NOT show an edit button on a simple ETH send initiated by a dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/dapp-tx-edit.spec.js",
+      "duration": 21616,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should decrypt an encrypted message",
+      "fullTitle": "Encrypt Decrypt should decrypt an encrypted message",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/encrypt-decrypt.spec.js",
+      "duration": 10307,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should encrypt and decrypt multiple messages",
+      "fullTitle": "Encrypt Decrypt should encrypt and decrypt multiple messages",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/encrypt-decrypt.spec.js",
+      "duration": 8321,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should show balance correctly as ETH",
+      "fullTitle": "Encrypt Decrypt should show balance correctly as ETH",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/encrypt-decrypt.spec.js",
+      "duration": 5515,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should show balance correctly as Fiat",
+      "fullTitle": "Encrypt Decrypt should show balance correctly as Fiat",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/encrypt-decrypt.spec.js",
+      "duration": 5542,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "only broadcasts subscription notifications on the page that registered the subscription",
+      "fullTitle": "eth_subscribe only broadcasts subscription notifications on the page that registered the subscription",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/eth-subscribe.spec.js",
+      "duration": 8615,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should display a warning when the contract interaction is expected to fail",
+      "fullTitle": "Failing contract interaction  should display a warning when the contract interaction is expected to fail",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/failing-contract.spec.js",
+      "duration": 15104,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should display a warning when the contract interaction is expected to fail",
+      "fullTitle": "Failing contract interaction on non-EIP1559 network should display a warning when the contract interaction is expected to fail",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/failing-contract.spec.js",
+      "duration": 12915,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "sets permissions and connect to Dapp",
+      "fullTitle": "Permissions sets permissions and connect to Dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/permissions.spec.js",
+      "duration": 7028,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "provider should inform dapp when switching networks",
+      "fullTitle": "MetaMask provider should inform dapp when switching networks",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/provider-api.spec.js",
+      "duration": 6163,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should reject unsupported methods",
+      "fullTitle": "MetaMask should reject unsupported methods",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/provider-api.spec.js",
+      "duration": 4219,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should revoke eth_accounts permissions via test dapp",
+      "fullTitle": "Wallet Revoke Permissions should revoke eth_accounts permissions via test dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/revoke-permissions.spec.js",
+      "duration": 5020,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "user should be able to confirm sign in with ethereum",
+      "fullTitle": "Sign in with ethereum user should be able to confirm sign in with ethereum",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/signin-with-ethereum.spec.js",
+      "duration": 6985,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "are sent immediately when user installs app and chooses to opt in metrics",
+      "fullTitle": "App Installed Events @no-mmi are sent immediately when user installs app and chooses to opt in metrics",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/app-installed.spec.js",
+      "duration": 5011,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "are not sent when user installs app and chooses to opt out metrics",
+      "fullTitle": "App Installed Events @no-mmi are not sent when user installs app and chooses to opt out metrics",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/app-installed.spec.js",
+      "duration": 3329,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is not sent when metametrics ID is not valid",
+      "fullTitle": "Dapp viewed Event @no-mmi is not sent when metametrics ID is not valid",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 17582,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when navigating to dapp with no account connected",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when navigating to dapp with no account connected",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6565,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when opening the dapp in a new tab with one account connected",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when opening the dapp in a new tab with one account connected",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6992,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when refreshing dapp with one account connected",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when refreshing dapp with one account connected",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6951,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when navigating to a connected dapp",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when navigating to a connected dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6773,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when connecting dapp with two accounts",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when connecting dapp with two accounts",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6261,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when reconnect to a dapp that has been connected before",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when reconnect to a dapp that has been connected before",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 8840,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should have no policy gaps for UI controller state @no-mmi",
+      "fullTitle": "Sentry errors should have no policy gaps for UI controller state @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 4718,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should not have extra properties in UI state mask @no-mmi",
+      "fullTitle": "Sentry errors should not have extra properties in UI state mask @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 2993,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT send error events in the background",
+      "fullTitle": "Sentry errors before initialization, after opting out of metrics should NOT send error events in the background",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 5998,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT send error events in the UI",
+      "fullTitle": "Sentry errors before initialization, after opting out of metrics should NOT send error events in the UI",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 6107,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should send error events in background",
+      "fullTitle": "Sentry errors before initialization, after opting into metrics @no-mmi should send error events in background",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3016,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should capture background application state",
+      "fullTitle": "Sentry errors before initialization, after opting into metrics @no-mmi should capture background application state",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3099,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should capture migration log breadcrumbs when there is an invariant state error in a migration",
+      "fullTitle": "Sentry errors before initialization, after opting into metrics @no-mmi should capture migration log breadcrumbs when there is an invariant state error in a migration",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should send error events in UI",
+      "fullTitle": "Sentry errors before initialization, after opting into metrics @no-mmi should send error events in UI",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3548,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should capture UI application state",
+      "fullTitle": "Sentry errors before initialization, after opting into metrics @no-mmi should capture UI application state",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3672,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT send error events in the background",
+      "fullTitle": "Sentry errors after initialization, after opting out of metrics should NOT send error events in the background",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3828,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT send error events in the UI",
+      "fullTitle": "Sentry errors after initialization, after opting out of metrics should NOT send error events in the UI",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3435,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should send error events in background",
+      "fullTitle": "Sentry errors after initialization, after opting into metrics @no-mmi should send error events in background",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3544,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should capture background application state",
+      "fullTitle": "Sentry errors after initialization, after opting into metrics @no-mmi should capture background application state",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3483,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should send error events in UI",
+      "fullTitle": "Sentry errors after initialization, after opting into metrics @no-mmi should send error events in UI",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3595,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should capture UI application state",
+      "fullTitle": "Sentry errors after initialization, after opting into metrics @no-mmi should capture UI application state",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3511,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "MetaMetrics ID should persist when the user opts-out and then opts-in again of MetaMetrics collection",
+      "fullTitle": "MetaMetrics ID persistence MetaMetrics ID should persist when the user opts-out and then opts-in again of MetaMetrics collection",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/metametrics-persistence.spec.js",
+      "duration": 5886,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked when connecting to dapp @no-mmi",
+      "fullTitle": "Permissions Approved Event Successfully tracked when connecting to dapp @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/permissions-approved.spec.js",
+      "duration": 6477,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for signTypedData_v4",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for signTypedData_v4",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 7454,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for signTypedData_v3",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for signTypedData_v3",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 6460,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for signTypedData",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for signTypedData",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 5788,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for personalSign",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for personalSign",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 5557,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for eth_sign",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for eth_sign",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 6446,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Completes a Swap between ETH and DAI after changing initial rate",
+      "fullTitle": "Swap Eth for another Token @no-mmi Completes a Swap between ETH and DAI after changing initial rate",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/swaps.spec.js",
+      "duration": 26005,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked when sending a transaction @no-mmi",
+      "fullTitle": "Transaction Finalized Event Successfully tracked when sending a transaction @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/transaction-finalized.spec.js",
+      "duration": 19019,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should send first three Page metric events upon fullscreen page load",
+      "fullTitle": "Unlock wallet should send first three Page metric events upon fullscreen page load",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/unlock-wallet.spec.js",
+      "duration": 5413,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "are sent when onboarding user who chooses to opt in metrics",
+      "fullTitle": "Wallet Created Events @no-mmi are sent when onboarding user who chooses to opt in metrics",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/wallet-created.spec.js",
+      "duration": 6133,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "are not sent when onboarding user who chooses to opt out metrics",
+      "fullTitle": "Wallet Created Events @no-mmi are not sent when onboarding user who chooses to opt out metrics",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/wallet-created.spec.js",
+      "duration": 5298,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should disconnect when click on Disconnect button in connections page",
+      "fullTitle": "Connections page should disconnect when click on Disconnect button in connections page",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/multichain/connection-page.spec.js",
+      "duration": 2878,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should connect more accounts when already connected to a dapp",
+      "fullTitle": "Connections page should connect more accounts when already connected to a dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/multichain/connection-page.spec.js",
+      "duration": 1962,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should show connected site permissions when a single dapp is connected",
+      "fullTitle": "Permissions Page should show connected site permissions when a single dapp is connected",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/multichain/permission-page.spec.js",
+      "duration": 5639,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should redirect users to connections page when users click on connected permission",
+      "fullTitle": "Permissions Page should redirect users to connections page when users click on connected permission",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/multichain/permission-page.spec.js",
+      "duration": 4595,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should show warning when adding chainId 0x1(ethereum) and be followed by an wrong chainId error",
+      "fullTitle": "Custom network JSON-RPC API should show warning when adding chainId 0x1(ethereum) and be followed by an wrong chainId error",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 6768,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "don't add bad rpc custom network",
+      "fullTitle": "Custom network JSON-RPC API don't add bad rpc custom network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 6169,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "don't validate bad rpc custom network when toggle is off",
+      "fullTitle": "Custom network JSON-RPC API don't validate bad rpc custom network when toggle is off",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5844,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "don't add unreachable custom network",
+      "fullTitle": "Custom network JSON-RPC API don't add unreachable custom network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5709,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "add custom network and switch the network",
+      "fullTitle": "Custom network Popular Networks List add custom network and switch the network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5416,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "add custom network and not switch the network",
+      "fullTitle": "Custom network Popular Networks List add custom network and not switch the network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5253,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "delete the Arbitrum network",
+      "fullTitle": "Custom network Popular Networks List delete the Arbitrum network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 4154,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "when the network details validation toggle is turned on, validate user inserted details against data from 'chainid.network'",
+      "fullTitle": "Custom network Popular Networks List when the network details validation toggle is turned on, validate user inserted details against data from 'chainid.network'",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 4613,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "when the network details validation toggle is turned off, don't validate user inserted details",
+      "fullTitle": "Custom network Popular Networks List when the network details validation toggle is turned off, don't validate user inserted details",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5380,
+      "currentRetry": 0,
+      "err": {
+        "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at candidateNetworkIsNotValidated (test/e2e/tests/network/add-custom-network.spec.js:945:9)\n    at process.withFixtures (node:internal/process/task_queues:95:5)\n    at /Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js:623:13\n    at withFixtures (test/e2e/helpers.js:114:9)\n    at Context.<anonymous> (test/e2e/tests/network/add-custom-network.spec.js:611:13)",
+        "message": "Expected values to be strictly equal:\n\nfalse !== true\n",
+        "generatedMessage": true,
+        "name": "AssertionError",
+        "code": "ERR_ASSERTION",
+        "actual": "false",
+        "expected": "true",
+        "operator": "strictEqual"
+      }
+    },
+    {
+      "title": "should add mainnet network",
+      "fullTitle": "Custom network customNetwork should add mainnet network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 24828,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should check symbol and show warnings",
+      "fullTitle": "Custom network customNetwork should check symbol and show warnings",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 4356,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should add collision network",
+      "fullTitle": "Custom network customNetwork should add collision network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 4369,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     }
   ],
-  "failures": [],
+  "failures": [
+    {
+      "title": "when the network details validation toggle is turned off, don't validate user inserted details",
+      "fullTitle": "Custom network Popular Networks List when the network details validation toggle is turned off, don't validate user inserted details",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5380,
+      "currentRetry": 0,
+      "err": {
+        "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at candidateNetworkIsNotValidated (test/e2e/tests/network/add-custom-network.spec.js:945:9)\n    at process.withFixtures (node:internal/process/task_queues:95:5)\n    at /Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js:623:13\n    at withFixtures (test/e2e/helpers.js:114:9)\n    at Context.<anonymous> (test/e2e/tests/network/add-custom-network.spec.js:611:13)",
+        "message": "Expected values to be strictly equal:\n\nfalse !== true\n",
+        "generatedMessage": true,
+        "name": "AssertionError",
+        "code": "ERR_ASSERTION",
+        "actual": "false",
+        "expected": "true",
+        "operator": "strictEqual"
+      }
+    }
+  ],
   "passes": [
     {
-      "title": "executes a eth_accounts json rpc call",
-      "fullTitle": "eth_accounts executes a eth_accounts json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_accounts.spec.js",
-      "duration": 6309,
+      "title": "should show the QR code for the account",
+      "fullTitle": "Show account details should show the QR code for the account",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 14961,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a new message call",
-      "fullTitle": "eth_call executes a new message call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_call.spec.js",
-      "duration": 13521,
+      "title": "should show the correct private key from account menu",
+      "fullTitle": "Show account details should show the correct private key from account menu",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 6592,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "returns the chain ID of the current network",
-      "fullTitle": "eth_chainId returns the chain ID of the current network",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_chainId.spec.js",
-      "duration": 5382,
+      "title": "should show the correct private key for an unselected account from account menu",
+      "fullTitle": "Show account details should show the correct private key for an unselected account from account menu",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 7015,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a eth_coinbase json rpc call",
-      "fullTitle": "eth_coinbase executes a eth_coinbase json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_coinbase.spec.js",
-      "duration": 5611,
+      "title": "should show the correct private key from global menu",
+      "fullTitle": "Show account details should show the correct private key from global menu",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 6486,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a estimate gas json rpc call",
-      "fullTitle": "eth_estimateGas executes a estimate gas json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_estimateGas.spec.js",
-      "duration": 8432,
+      "title": "should show the correct private key for a second account from global menu",
+      "fullTitle": "Show account details should show the correct private key for a second account from global menu",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 7206,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes gas price json rpc call",
-      "fullTitle": "eth_gasPrice executes gas price json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_gasPrice.spec.js",
-      "duration": 6189,
+      "title": "should not reveal private key when password is incorrect",
+      "fullTitle": "Show account details should not reveal private key when password is incorrect",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-details.spec.js",
+      "duration": 4834,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a new block filter call",
-      "fullTitle": "eth_newBlockFilter executes a new block filter call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_newBlockFilter.spec.js",
-      "duration": 6265,
+      "title": "hide account by clicking hide button",
+      "fullTitle": "Account list - hide/unhide functionality -  hide account by clicking hide button",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-hide-unhide.spec.js",
+      "duration": 5029,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a request accounts json rpc call",
-      "fullTitle": "eth_requestAccounts executes a request accounts json rpc call",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_requestAccounts.spec.js",
-      "duration": 5231,
+      "title": "unhide account by clicking show account button",
+      "fullTitle": "Account list - hide/unhide functionality -  unhide account by clicking show account button",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-hide-unhide.spec.js",
+      "duration": 4922,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "confirms a new transaction",
-      "fullTitle": "eth_sendTransaction confirms a new transaction",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_sendTransaction.spec.js",
-      "duration": 8893,
+      "title": "pin and unpin account by clicking the pin/unpin button",
+      "fullTitle": "Account list - pin/unpin functionality -  pin and unpin account by clicking the pin/unpin button",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-pin-unpin.spec.js",
+      "duration": 6207,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "rejects a new transaction",
-      "fullTitle": "eth_sendTransaction rejects a new transaction",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_sendTransaction.spec.js",
-      "duration": 7584,
+      "title": "account once hidden should be unpinned and remain so even if revealed again",
+      "fullTitle": "Account list - pin/unpin functionality -  account once hidden should be unpinned and remain so even if revealed again",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/account-pin-unpin.spec.js",
+      "duration": 4219,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a subscription event",
-      "fullTitle": "eth_subscribe executes a subscription event",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/eth_subscribe.spec.js",
-      "duration": 7019,
+      "title": "should display correct new account name after create",
+      "fullTitle": "Add account should display correct new account name after create",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/add-account.spec.js",
+      "duration": 5117,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "switches the chainId of two dapps when switchEthereumChain of one dapp is confirmed",
-      "fullTitle": "Switch Ethereum Chain for two dapps switches the chainId of two dapps when switchEthereumChain of one dapp is confirmed",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
-      "duration": 8406,
+      "title": "should not affect public address when using secret recovery phrase to recover account with non-zero balance @no-mmi",
+      "fullTitle": "Add account should not affect public address when using secret recovery phrase to recover account with non-zero balance @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/add-account.spec.js",
+      "duration": 10849,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "should queue switchEthereumChain request from second dapp after send tx request",
-      "fullTitle": "Switch Ethereum Chain for two dapps should queue switchEthereumChain request from second dapp after send tx request",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
-      "duration": 9800,
+      "title": "should be possible to remove an account imported with a private key, but should not be possible to remove an account generated from the SRP imported in onboarding @no-mmi",
+      "fullTitle": "Add account should be possible to remove an account imported with a private key, but should not be possible to remove an account generated from the SRP imported in onboarding @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/add-account.spec.js",
+      "duration": 5694,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "should queue send tx after switchEthereum request with a warning, confirming removes pending tx",
-      "fullTitle": "Switch Ethereum Chain for two dapps should queue send tx after switchEthereum request with a warning, confirming removes pending tx",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
-      "duration": 8848,
+      "title": "Import wallet using Secret Recovery Phrase",
+      "fullTitle": "Import flow @no-mmi Import wallet using Secret Recovery Phrase",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 13188,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "should queue send tx after switchEthereum request with a warning, if switchEthereum request is cancelled should show pending tx",
-      "fullTitle": "Switch Ethereum Chain for two dapps should queue send tx after switchEthereum request with a warning, if switchEthereum request is cancelled should show pending tx",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/switchEthereumChain.spec.js",
-      "duration": 10031,
+      "title": "Import wallet using Secret Recovery Phrase with pasting word by word",
+      "fullTitle": "Import flow @no-mmi Import wallet using Secret Recovery Phrase with pasting word by word",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 5535,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "executes a request permissions on eth_accounts event",
-      "fullTitle": "wallet_requestPermissions executes a request permissions on eth_accounts event",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/wallet_requestPermissions.spec.js",
-      "duration": 7366,
+      "title": "Import Account using private key and remove imported account",
+      "fullTitle": "Import flow @no-mmi Import Account using private key and remove imported account",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 5970,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}
     },
     {
-      "title": "should revoke dapp permissions ",
-      "fullTitle": "Revoke Dapp Permissions should revoke dapp permissions ",
-      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/json-rpc/wallet_revokePermissions.spec.js",
-      "duration": 5567,
+      "title": "Import Account using json file",
+      "fullTitle": "Import flow @no-mmi Import Account using json file",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 4553,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Import Account using private key of an already active account should result in an error",
+      "fullTitle": "Import flow @no-mmi Import Account using private key of an already active account should result in an error",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 3710,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Connects to a Hardware wallet for trezor",
+      "fullTitle": "Import flow @no-mmi Connects to a Hardware wallet for trezor",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/import-flow.spec.js",
+      "duration": 5959,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Back up Secret Recovery Phrase from backup reminder @no-mmi",
+      "fullTitle": "Incremental Security Back up Secret Recovery Phrase from backup reminder @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/incremental-security.spec.js",
+      "duration": 8912,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "successfully unlocks after lock",
+      "fullTitle": "Lock and unlock successfully unlocks after lock",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/lock-account.spec.js",
+      "duration": 6466,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "the UI and background environments are locked down",
+      "fullTitle": "lockdown the UI and background environments are locked down",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/lockdown.spec.js",
+      "duration": 4667,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Creating a new wallet @no-mmi",
+      "fullTitle": "MetaMask Responsive UI Creating a new wallet @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/metamask-responsive-ui.spec.js",
+      "duration": 7424,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Importing existing wallet from lock page",
+      "fullTitle": "MetaMask Responsive UI Importing existing wallet from lock page",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/metamask-responsive-ui.spec.js",
+      "duration": 5385,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Send Transaction from responsive window",
+      "fullTitle": "MetaMask Responsive UI Send Transaction from responsive window",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/metamask-responsive-ui.spec.js",
+      "duration": 9264,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "successfully unlocks an old vault, locks it, and unlock again",
+      "fullTitle": "Migrate vault with old encryption successfully unlocks an old vault, locks it, and unlock again",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/account/migrate-old-vault.spec.js",
+      "duration": 5660,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "links to the users account on the explorer, ",
+      "fullTitle": "Block Explorer links to the users account on the explorer, ",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/block-explorer.spec.js",
+      "duration": 5358,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "links to the token tracker in the explorer, ",
+      "fullTitle": "Block Explorer links to the token tracker in the explorer, ",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/block-explorer.spec.js",
+      "duration": 8255,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "links to the transaction on the explorer, ",
+      "fullTitle": "Block Explorer links to the transaction on the explorer, ",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/block-explorer.spec.js",
+      "duration": 3947,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should display the correct account balance after contract interactions",
+      "fullTitle": "Deploy contract and call contract methods should display the correct account balance after contract interactions",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/contract-interactions.spec.js",
+      "duration": 23255,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should trigger the add chain confirmation despite MetaMask being locked",
+      "fullTitle": "Dapp interactions should trigger the add chain confirmation despite MetaMask being locked",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/dapp-interactions.spec.js",
+      "duration": 7987,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should connect a second Dapp despite MetaMask being locked",
+      "fullTitle": "Dapp interactions should connect a second Dapp despite MetaMask being locked",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/dapp-interactions.spec.js",
+      "duration": 6118,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT show an edit button on a contract interaction confirmation initiated by a dapp",
+      "fullTitle": "Editing confirmations of dapp initiated contract interactions should NOT show an edit button on a contract interaction confirmation initiated by a dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/dapp-tx-edit.spec.js",
+      "duration": 24148,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT show an edit button on a simple ETH send initiated by a dapp",
+      "fullTitle": "Editing confirmations of dapp initiated contract interactions should NOT show an edit button on a simple ETH send initiated by a dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/dapp-tx-edit.spec.js",
+      "duration": 21616,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should decrypt an encrypted message",
+      "fullTitle": "Encrypt Decrypt should decrypt an encrypted message",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/encrypt-decrypt.spec.js",
+      "duration": 10307,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should encrypt and decrypt multiple messages",
+      "fullTitle": "Encrypt Decrypt should encrypt and decrypt multiple messages",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/encrypt-decrypt.spec.js",
+      "duration": 8321,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should show balance correctly as ETH",
+      "fullTitle": "Encrypt Decrypt should show balance correctly as ETH",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/encrypt-decrypt.spec.js",
+      "duration": 5515,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should show balance correctly as Fiat",
+      "fullTitle": "Encrypt Decrypt should show balance correctly as Fiat",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/encrypt-decrypt.spec.js",
+      "duration": 5542,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "only broadcasts subscription notifications on the page that registered the subscription",
+      "fullTitle": "eth_subscribe only broadcasts subscription notifications on the page that registered the subscription",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/eth-subscribe.spec.js",
+      "duration": 8615,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should display a warning when the contract interaction is expected to fail",
+      "fullTitle": "Failing contract interaction  should display a warning when the contract interaction is expected to fail",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/failing-contract.spec.js",
+      "duration": 15104,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should display a warning when the contract interaction is expected to fail",
+      "fullTitle": "Failing contract interaction on non-EIP1559 network should display a warning when the contract interaction is expected to fail",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/failing-contract.spec.js",
+      "duration": 12915,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "sets permissions and connect to Dapp",
+      "fullTitle": "Permissions sets permissions and connect to Dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/permissions.spec.js",
+      "duration": 7028,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "provider should inform dapp when switching networks",
+      "fullTitle": "MetaMask provider should inform dapp when switching networks",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/provider-api.spec.js",
+      "duration": 6163,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should reject unsupported methods",
+      "fullTitle": "MetaMask should reject unsupported methods",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/provider-api.spec.js",
+      "duration": 4219,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should revoke eth_accounts permissions via test dapp",
+      "fullTitle": "Wallet Revoke Permissions should revoke eth_accounts permissions via test dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/revoke-permissions.spec.js",
+      "duration": 5020,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "user should be able to confirm sign in with ethereum",
+      "fullTitle": "Sign in with ethereum user should be able to confirm sign in with ethereum",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/dapp-interactions/signin-with-ethereum.spec.js",
+      "duration": 6985,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "are sent immediately when user installs app and chooses to opt in metrics",
+      "fullTitle": "App Installed Events @no-mmi are sent immediately when user installs app and chooses to opt in metrics",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/app-installed.spec.js",
+      "duration": 5011,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "are not sent when user installs app and chooses to opt out metrics",
+      "fullTitle": "App Installed Events @no-mmi are not sent when user installs app and chooses to opt out metrics",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/app-installed.spec.js",
+      "duration": 3329,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is not sent when metametrics ID is not valid",
+      "fullTitle": "Dapp viewed Event @no-mmi is not sent when metametrics ID is not valid",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 17582,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when navigating to dapp with no account connected",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when navigating to dapp with no account connected",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6565,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when opening the dapp in a new tab with one account connected",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when opening the dapp in a new tab with one account connected",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6992,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when refreshing dapp with one account connected",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when refreshing dapp with one account connected",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6951,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when navigating to a connected dapp",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when navigating to a connected dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6773,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when connecting dapp with two accounts",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when connecting dapp with two accounts",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 6261,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "is sent when reconnect to a dapp that has been connected before",
+      "fullTitle": "Dapp viewed Event @no-mmi is sent when reconnect to a dapp that has been connected before",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/dapp-viewed.spec.js",
+      "duration": 8840,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should have no policy gaps for UI controller state @no-mmi",
+      "fullTitle": "Sentry errors should have no policy gaps for UI controller state @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 4718,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should not have extra properties in UI state mask @no-mmi",
+      "fullTitle": "Sentry errors should not have extra properties in UI state mask @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 2993,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT send error events in the background",
+      "fullTitle": "Sentry errors before initialization, after opting out of metrics should NOT send error events in the background",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 5998,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT send error events in the UI",
+      "fullTitle": "Sentry errors before initialization, after opting out of metrics should NOT send error events in the UI",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 6107,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should send error events in background",
+      "fullTitle": "Sentry errors before initialization, after opting into metrics @no-mmi should send error events in background",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3016,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should capture background application state",
+      "fullTitle": "Sentry errors before initialization, after opting into metrics @no-mmi should capture background application state",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3099,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should send error events in UI",
+      "fullTitle": "Sentry errors before initialization, after opting into metrics @no-mmi should send error events in UI",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3548,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should capture UI application state",
+      "fullTitle": "Sentry errors before initialization, after opting into metrics @no-mmi should capture UI application state",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3672,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT send error events in the background",
+      "fullTitle": "Sentry errors after initialization, after opting out of metrics should NOT send error events in the background",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3828,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should NOT send error events in the UI",
+      "fullTitle": "Sentry errors after initialization, after opting out of metrics should NOT send error events in the UI",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3435,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should send error events in background",
+      "fullTitle": "Sentry errors after initialization, after opting into metrics @no-mmi should send error events in background",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3544,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should capture background application state",
+      "fullTitle": "Sentry errors after initialization, after opting into metrics @no-mmi should capture background application state",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3483,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should send error events in UI",
+      "fullTitle": "Sentry errors after initialization, after opting into metrics @no-mmi should send error events in UI",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3595,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should capture UI application state",
+      "fullTitle": "Sentry errors after initialization, after opting into metrics @no-mmi should capture UI application state",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/errors.spec.js",
+      "duration": 3511,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "MetaMetrics ID should persist when the user opts-out and then opts-in again of MetaMetrics collection",
+      "fullTitle": "MetaMetrics ID persistence MetaMetrics ID should persist when the user opts-out and then opts-in again of MetaMetrics collection",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/metametrics-persistence.spec.js",
+      "duration": 5886,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked when connecting to dapp @no-mmi",
+      "fullTitle": "Permissions Approved Event Successfully tracked when connecting to dapp @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/permissions-approved.spec.js",
+      "duration": 6477,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for signTypedData_v4",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for signTypedData_v4",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 7454,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for signTypedData_v3",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for signTypedData_v3",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 6460,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for signTypedData",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for signTypedData",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 5788,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for personalSign",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for personalSign",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 5557,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked for eth_sign",
+      "fullTitle": "Signature Approved Event @no-mmi Successfully tracked for eth_sign",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/signature-approved.spec.js",
+      "duration": 6446,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Completes a Swap between ETH and DAI after changing initial rate",
+      "fullTitle": "Swap Eth for another Token @no-mmi Completes a Swap between ETH and DAI after changing initial rate",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/swaps.spec.js",
+      "duration": 26005,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "Successfully tracked when sending a transaction @no-mmi",
+      "fullTitle": "Transaction Finalized Event Successfully tracked when sending a transaction @no-mmi",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/transaction-finalized.spec.js",
+      "duration": 19019,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should send first three Page metric events upon fullscreen page load",
+      "fullTitle": "Unlock wallet should send first three Page metric events upon fullscreen page load",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/unlock-wallet.spec.js",
+      "duration": 5413,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "are sent when onboarding user who chooses to opt in metrics",
+      "fullTitle": "Wallet Created Events @no-mmi are sent when onboarding user who chooses to opt in metrics",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/wallet-created.spec.js",
+      "duration": 6133,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "are not sent when onboarding user who chooses to opt out metrics",
+      "fullTitle": "Wallet Created Events @no-mmi are not sent when onboarding user who chooses to opt out metrics",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/metrics/wallet-created.spec.js",
+      "duration": 5298,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should disconnect when click on Disconnect button in connections page",
+      "fullTitle": "Connections page should disconnect when click on Disconnect button in connections page",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/multichain/connection-page.spec.js",
+      "duration": 2878,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should connect more accounts when already connected to a dapp",
+      "fullTitle": "Connections page should connect more accounts when already connected to a dapp",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/multichain/connection-page.spec.js",
+      "duration": 1962,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should show connected site permissions when a single dapp is connected",
+      "fullTitle": "Permissions Page should show connected site permissions when a single dapp is connected",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/multichain/permission-page.spec.js",
+      "duration": 5639,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should redirect users to connections page when users click on connected permission",
+      "fullTitle": "Permissions Page should redirect users to connections page when users click on connected permission",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/multichain/permission-page.spec.js",
+      "duration": 4595,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should show warning when adding chainId 0x1(ethereum) and be followed by an wrong chainId error",
+      "fullTitle": "Custom network JSON-RPC API should show warning when adding chainId 0x1(ethereum) and be followed by an wrong chainId error",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 6768,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "don't add bad rpc custom network",
+      "fullTitle": "Custom network JSON-RPC API don't add bad rpc custom network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 6169,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "don't validate bad rpc custom network when toggle is off",
+      "fullTitle": "Custom network JSON-RPC API don't validate bad rpc custom network when toggle is off",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5844,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "don't add unreachable custom network",
+      "fullTitle": "Custom network JSON-RPC API don't add unreachable custom network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5709,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "add custom network and switch the network",
+      "fullTitle": "Custom network Popular Networks List add custom network and switch the network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5416,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "add custom network and not switch the network",
+      "fullTitle": "Custom network Popular Networks List add custom network and not switch the network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 5253,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "delete the Arbitrum network",
+      "fullTitle": "Custom network Popular Networks List delete the Arbitrum network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 4154,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "when the network details validation toggle is turned on, validate user inserted details against data from 'chainid.network'",
+      "fullTitle": "Custom network Popular Networks List when the network details validation toggle is turned on, validate user inserted details against data from 'chainid.network'",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 4613,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should add mainnet network",
+      "fullTitle": "Custom network customNetwork should add mainnet network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 24828,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should check symbol and show warnings",
+      "fullTitle": "Custom network customNetwork should check symbol and show warnings",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 4356,
+      "currentRetry": 0,
+      "speed": "slow",
+      "err": {}
+    },
+    {
+      "title": "should add collision network",
+      "fullTitle": "Custom network customNetwork should add collision network",
+      "file": "/Users/gofer/workspace/metamask/metamask-extension/test/e2e/tests/network/add-custom-network.spec.js",
+      "duration": 4369,
       "currentRetry": 0,
       "speed": "slow",
       "err": {}

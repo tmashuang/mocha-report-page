@@ -57,7 +57,9 @@ export const fileInfoFormat = (state: any) => state.tests.reduce((acc: any, test
     const existingElement = acc.find((element: any) => element.name === test.file.split('/').pop());
     if (existingElement) {
       existingElement.count++;
-      existingElement.executionTime += test.duration;
+      if (test.duration) {
+        existingElement.executionTime += test.duration;
+      }
     } else {
       acc.push({
         name: test.file.split('/').pop(),
@@ -70,3 +72,6 @@ export const fileInfoFormat = (state: any) => state.tests.reduce((acc: any, test
     }
     return acc;
   }, []);
+
+export const percentageChrome = (tests: any) => (tests.length / tests.length) * 100
+export const percentageFirefox = (tests: any) =>  (0 / tests.length) * 100

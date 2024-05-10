@@ -2,19 +2,18 @@ import { Card, Grid } from "@mantine/core";
 import { useAppSelector } from '../../app/hooks'
 import { CardTopBar } from "../card/CardInfo";
 import { DonutChart } from "../donut-chart/DonutChart";
-
-
 import { TableRender } from "../table/Table";
+import { percentageChrome, percentageFirefox } from '../utils';
 
 export const BrowserBreakdown = () => {
   const tests = useAppSelector((state: any) => state.tests)
-  const browsers = useAppSelector((state: any) => state.browsers)
 
-  const {chrome, firefox} = browsers
+  const chromePercent = percentageChrome(tests)
+  const ffPercent = percentageFirefox(tests)
 
   const a = [
-    ['Chrome', 17, '50 %'],
-    ['Firefox', 17, '50 %']
+    ['Chrome', tests.length, `${chromePercent} %`],
+    ['Firefox', 0, `${ffPercent} %`]
   ]
 
   const props = {
@@ -22,8 +21,8 @@ export const BrowserBreakdown = () => {
     tableHead: ['Browsers', 'Tests', 'Percentage'],
     tableBody: a,
     total: tests.length,
-    browsers: Object.keys(browsers),
-    counts: [chrome.length, firefox.length]
+    browsers: [a[0][0]],
+    counts: [tests.length]
   }
 
   return (

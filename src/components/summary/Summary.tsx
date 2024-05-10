@@ -12,14 +12,16 @@ export const Summary = () => {
   const failed =  useAppSelector((state: any) => state.failures)
   const retries = useAppSelector((state: any) => retryCount(state.tests))
 
+  const passesPercentage = (passes.length / tests.length) * 100
+  const failedPercentage = (failed.length / tests.length) * 100
 
   const props = {
     chartName: 'Summary',
     tableHead: ['Status', 'Tests', 'Percentage'],
     tableBody: [
-      ['Passed', passes.length, '100 %'],
-      ['Failed', failed.length, '0 %'],
-      ['Retries',retries, '0 %']
+      ['Passed', passes.length, `${passesPercentage.toFixed(2)} %`],
+      ['Failed', failed.length, `${failedPercentage.toFixed(2)} %`],
+      ['Retries', retries, '0 %']
     ],
     statuses: ['Passes', 'Failed', 'Retries'],
     counts: [passes.length, failed.length],
